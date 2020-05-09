@@ -4,7 +4,8 @@ from tkinter.messagebox import showinfo
 
 def exit():
 	try:
-		os.system('shutdown -s -t 5')
+		os.system('shutdown -a')
+		os.system('shutdown -s -t 00')
 	except:
 		print('Error!')
 	print('power off')
